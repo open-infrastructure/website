@@ -1,3 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://open-infrastructure.de/blog/static"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "open Infrastructure Blog"
+theme = "notepadium"
