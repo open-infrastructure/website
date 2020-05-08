@@ -1,0 +1,4 @@
+baseURL = "https://open-infrastructure.de/blog/static"
+languageCode = "en-us"
+title = "open Infrastructure Blog"
+theme = "notepadium"
