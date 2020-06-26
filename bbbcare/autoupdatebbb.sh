@@ -10,7 +10,7 @@
 
 # Variables
 # FQDN of the Server
-BBBSERVER=bbb.jitsi.rocks
+BBBSERVER=
 
 
 ###################################################
@@ -21,12 +21,12 @@ echo '# BigBlueButton AutoUpgrade '
 echo '###############################################'
 
 if [ "$BBBSERVER" != '' ]
-  then 
+  then
 		echo '###############################################'
 		echo '# Searching for Updates'
 		echo '###############################################'
 		apt update && apt list --upgradable
-	
+
 
 		echo '###############################################'
 		echo '# Installing System & BBB Upgrades.'
@@ -44,7 +44,7 @@ if [ "$BBBSERVER" != '' ]
 		cd /root/greenlight/ && docker-compose pull && docker-compose down && docker-compose up -d
 
 
-	
+
 		echo '###############################################'
 		echo '# Move custom Homepage'
 		echo '###############################################'

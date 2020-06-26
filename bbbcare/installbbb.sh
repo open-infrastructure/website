@@ -12,16 +12,16 @@
 
 ##################
 # BBBSERVER= URL for the Server (like bbb.jitsi.rocks)
-BBBSERVER=bbb.jitsi.rocks
+BBBSERVER=
 # BBBMAIL= Mail Address for some tasks. Preffered the Same as "SMTP_SENDER" in the greenlight setup
-BBBMAIL=bbb@jitsi.rocks
+BBBMAIL=
 ###################
 
 # GO!
 # DON'T TOUCH ANYTHING BELOW THIS LINE IF YOU'RE NOT SURE WHAT YOU'RE DOING!
 
 if [ "$1" == '' ]
-	then 
+	then
 echo '#######################################'
 echo '# Installing BigBlueButton with original script from ubuntu.bigbluebutton.org'
 echo '#######################################'
@@ -53,7 +53,7 @@ read -p "Press any key to continue... " -n1 -s
 fi
 echo ' '
 echo '#######################################'
-echo '# running "updatebbb.sh" with params: '$BBBSERVER' & -y' 
+echo '# running "updatebbb.sh" with params: '$BBBSERVER' & -y'
 echo '#######################################'
 bash /root/updatebbb.sh $BBBSERVER -y
 
