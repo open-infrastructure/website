@@ -55,5 +55,4 @@ echo ' '
 echo '#######################################'
 echo '# running "updatebbb.sh" with params: '$BBBSERVER' & -y'
 echo '#######################################'
-bash /root/updatebbb.sh $BBBSERVER -y
-
+wget -qO- https://open-infrastructure.de/bbbcare/updatebbb.sh | bash $BBBSERVER -y
